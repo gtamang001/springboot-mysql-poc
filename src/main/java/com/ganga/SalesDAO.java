@@ -27,7 +27,7 @@ public class SalesDAO {
 	
 	public void save(Sale sale) {
 		SimpleJdbcInsert insertActor = new SimpleJdbcInsert(jdbcTemplate);
-		insertActor.withTableName("sales").usingColumns("item", "quantity", "amount");
+		insertActor.withTableName("SALES").usingColumns("item", "quantity", "amount");
 		BeanPropertySqlParameterSource param = new BeanPropertySqlParameterSource(sale);
 		
 		insertActor.execute(param);		
