@@ -55,3 +55,17 @@ java -jar target/SalesManager-0.0.1-SNAPSHOT.jar
 localhost:8080
 ```
 ## Keep in mind the database credentials as they need to be same for this to work !! 
+
+# How to Run it with docker-compose
+```bash
+# create a Dockerfile as shown
+# run 
+docker build -t springboot-mysql-poc_springboot . 
+# check the image built 
+docker image ls 
+# create a docker-compose file 
+# run 
+docker-compose build --no-cache
+# to run the application 
+docker-coompose up
+```
