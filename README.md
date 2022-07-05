@@ -68,4 +68,16 @@ docker image ls
 docker-compose build --no-cache
 # to run the application 
 docker-coompose up
+
+```
+## MYSQL part 
+```sql
+-- exec into the docker container with 
+docker exec -it <mysql-container> bash 
+-- check log in with root account 
+mysql -u root -p 
+-- enter root password 
+-- change to test_db 
+-- create table SALES as above 
+-- test application at localhost:8080
 ```
